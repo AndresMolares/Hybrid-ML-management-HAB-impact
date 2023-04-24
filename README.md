@@ -1,7 +1,5 @@
 # Hybrid Machine Learning techniques in the management of harmful algal blooms impac
 
-%![alt text](https://github.com/cafernandezlo/MLMicrobiomeT1D/blob/master/GraphicalAbstract.png?raw=true)
-
 ## Citation
 
 *citation pending*
@@ -17,9 +15,11 @@ Harmful algal blooms (HABs) are episodes of high concentrations of algae that ar
 
 ## Highlights
 
-* A Machine Learning methodology is proposed for the modelling of metagenomic data and the diagnosis of T1D infants.
-* A new metagenomic signature was obtained highly correlated with T1D diagnosis.
-* Machine Learning algorithms are able to obtain great results with sparse metagenomic data.
+*	Presence of toxicity in molluscan shellfish meat as a target for predicting HABs
+*	Hybrid AI methods outperform classical methods in predicting HABs
+*	Analysing the behaviour of hybrid machine learning models against unbalanced datasets
+*	BAGNET offers the best results in the prediction of HABs in complex regions
+
 
 # Questions?
 If you have any questions, please feel free to contact us!
