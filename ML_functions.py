@@ -15,6 +15,19 @@ from sklearn.model_selection import StratifiedKFold
 
 
 def _svm_knn_function(x_train, y_train, x_test, y_test, params):
+    '''
+    Name: _svm_knn_function
+    Description: This function implements the method of SVM-KNN
+    Inputs:
+        x_train: train inputs
+        y_train: train targets
+        x_test: test inputs
+        y_test: test targets
+        params: list(k, C)
+            k: int, Number of neighbors
+            C: float, 'c' regularization parameter
+    Outputs: true positives, false negatives, false positives, true negatives
+    '''
     def svm_knn_aux(x_train, x_test, y_train, k, c):
         modelo_knn = KNeighborsClassifier(n_neighbors=1, p=1)
         modelo_knn.fit(x_train, y_train)
@@ -60,6 +73,19 @@ def _svm_knn_function(x_train, y_train, x_test, y_test, params):
 
 
 def _bagnet_function(X_train, y_train, X_test, y_test, params):
+    '''
+    Name: _bagnet_function
+    Description: This function implements the method of BAGNET
+    Inputs:
+        x_train: train inputs
+        y_train: train targets
+        x_test: test inputs
+        y_test: test targets
+        params: neurons
+            neurons: list(int), could be [n] or [n,m] where n is de number of neurons of 1st layer
+                    and m de number of the 2nd layer
+    Outputs: true positives, false negatives, false positives, true negatives
+    '''
     def bagnet_aux(x_train, x_test, y_train, y_test, neurons):
         def pred(clf, x, y):
             y_pred = clf.predict(x)
@@ -156,6 +182,18 @@ def _bagnet_function(X_train, y_train, X_test, y_test, params):
 
 
 def _randomForest_function(x_train, y_train, x_test, y_test, params):
+    '''
+    Name: _randomForest_function
+    Description: This function implements the method of Random Forest
+    Inputs:
+        x_train: train inputs
+        y_train: train targets
+        x_test: test inputs
+        y_test: test targets
+        params: list(n_estimators)
+            n_estimators: int, The number of trees in the forest
+    Outputs: true positives, false negatives, false positives, true negatives
+    '''
     clf = RandomForestClassifier(n_jobs=2, random_state=0, n_estimators=params[0])
     clf.fit(x_train, y_train)
     pred = clf.predict(x_test)
@@ -165,6 +203,18 @@ def _randomForest_function(x_train, y_train, x_test, y_test, params):
 
 
 def _ann_function(x_train, y_train, x_test, y_test, params):
+    '''
+        Name: _ann_function
+        Description: This function implements the method of Artificial Neural Network
+        Inputs:
+            x_train: train inputs
+            y_train: train targets
+            x_test: test inputs
+            y_test: test targets
+            params: list(int), could be [n] or [n,m] where n is de number of neurons of 1st layer
+                    and m de number of the 2nd layer
+        Outputs: true positives, false negatives, false positives, true negatives
+        '''
     iterations = 50
     inp = x_train.shape[1]
     list_tp = []
@@ -222,6 +272,22 @@ def _ann_function(x_train, y_train, x_test, y_test, params):
 
 
 def _svm_function(x_train, y_train, x_test, y_test, params):
+    '''
+    Name: _svm_function
+    Description: This function implements the method of Support Vector Machine
+    Inputs:
+        x_train: train inputs
+        y_train: train targets
+        x_test: test inputs
+        y_test: test targets
+        params: list(kernel, C, param_aux)
+            kernel: {'linear', 'rbf', 'poly'} , Specifies the kernel type to be used in the algorithm
+            C: float, 'c' regularization parameter
+            param_aux:
+                if (kernel = 'rbf'): param_aux = gamma. gamma: {‘scale’, ‘auto’} or float, Kernel coefficient
+                if (kernel = 'poly'): param_aux = degree. degree: int, Degree of the polynomial kernel function
+    Outputs: true positives, false negatives, false positives, true negatives
+    '''
     if params[0] == "linear":
         svc = svm.SVC(kernel="linear", C=params[1], gamma="auto").fit(x_train, y_train)
     if params[0] == "rbf":
