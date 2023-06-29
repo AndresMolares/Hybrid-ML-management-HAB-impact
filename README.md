@@ -7,7 +7,19 @@
 DOI: 
 
 ```tex
-bibtex pending
+@article{MOLARESULLOA2023107988,
+title = {Hybrid machine learning techniques in the management of harmful algal blooms impact},
+journal = {Computers and Electronics in Agriculture},
+volume = {211},
+pages = {107988},
+year = {2023},
+issn = {0168-1699},
+doi = {https://doi.org/10.1016/j.compag.2023.107988},
+url = {https://www.sciencedirect.com/science/article/pii/S0168169923003769},
+author = {Andres Molares-Ulloa and Daniel Rivero and Jesús Gil Ruiz and Enrique Fernandez-Blanco and Luis de-la-Fuente-Valentín},
+keywords = {Machine learning, Harmful algal blooms, Biotoxins, Aquaculture, Hybrid techniques},
+abstract = {Harmful algal blooms (HABs) are episodes of high concentrations of algae that are potentially toxic for human consumption. Mollusc farming can be affected by HABs because, as filter feeders, they can accumulate high concentrations of marine biotoxins in their tissues. To avoid the risk to human consumption, harvesting is prohibited when toxicity is detected. At present, the closure of production areas is based on expert knowledge and the existence of a predictive model would help when conditions are complex and sampling is not possible. Although the concentration of toxin in meat is the method most commonly used by experts in the control of shellfish production areas, it is rarely used as a target by automatic prediction models. This is largely due to the irregularity of the data due to the established sampling programs. As an alternative, the activity status of production areas has been proposed as a target variable based on whether mollusc meat has a toxicity level below or above the legal limit. This new option is the most similar to the actual functioning of the control of shellfish production areas. For this purpose, we have made a comparison between hybrid machine learning models like Neural-Network-Adding Bootstrap (BAGNET) and Discriminative Nearest Neighbor Classification (SVM-KNN) when estimating the state of production areas. The study has been carried out in several estuaries with different levels of complexity in the episodes of algal blooms to demonstrate the generalization capacity of the models in bloom detection. As a result, we could observe that, with an average recall value of 93.41% and without dropping below 90% in any of the estuaries, BAGNET outperforms the other models both in terms of results and robustness.}
+}
 ```
 
 ## Abstract
