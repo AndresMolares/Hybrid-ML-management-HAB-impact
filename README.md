@@ -1,4 +1,4 @@
-# Hybrid Machine Learning techniques in the management of harmful algal blooms impac
+# Hybrid Machine Learning techniques in the management of harmful algal blooms impact
 
 ## Citation
 
