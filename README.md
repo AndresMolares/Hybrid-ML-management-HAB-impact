@@ -2,7 +2,11 @@
 
 ## Citation
 
-*citation pending*
+APA - Molares-Ulloa, A., Rivero, D., Ruiz, J. G., Fernandez-Blanco, E., & de-la-Fuente-Valentín, L. (2023). Hybrid machine learning techniques in the management of harmful algal blooms impact. Computers and Electronics in Agriculture, 211, 107988.
+
+ISO 690 - MOLARES-ULLOA, Andres, et al. Hybrid machine learning techniques in the management of harmful algal blooms impact. Computers and Electronics in Agriculture, 2023, vol. 211, p. 107988.
+
+MLA - Molares-Ulloa, Andres, et al. "Hybrid machine learning techniques in the management of harmful algal blooms impact." Computers and Electronics in Agriculture 211 (2023): 107988.
 
 DOI: 
 
